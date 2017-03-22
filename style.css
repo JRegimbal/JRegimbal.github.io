@@ -1,8 +1,7 @@
 div {
-	width: 30em;
-	margin-left: auto;
-	margin-right: auto;
-	padding: 10em;
+	width: 90em;
+	margin: 0 auto;
+	padding: 3em;
 }
 
 div h1 {
@@ -11,4 +10,11 @@ div h1 {
 
 div p {
 	text-align: center;
+}
+
+div object {
+	display: block;
+	margin: 0 auto;
+	width: 800px;
+	height: 700px;
 }
