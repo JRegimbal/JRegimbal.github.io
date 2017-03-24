@@ -5,7 +5,7 @@ div.container {
 
 div.header {
 	margin: 0 auto;
-	padding: 3em;
+	padding: 1em;
 	width: 80%;
 }
 
@@ -20,7 +20,7 @@ div.header p {
 object {
 	display: block;
 	margin: 0 auto;
-	height: 800px;
+	height: 700px;
 	width: 60%;
 }
 
