@@ -1,20 +1,68 @@
-div {
-	width: 90em;
+div.container {
+	overflow: auto;
+	width: 100%;
+}
+
+div.header {
 	margin: 0 auto;
 	padding: 3em;
+	width: 80%;
 }
 
-div h1 {
+div.header h1 {
 	text-align: center;
 }
 
-div p {
+div.header p {
 	text-align: center;
 }
 
-div object {
+object {
 	display: block;
 	margin: 0 auto;
-	width: 800px;
-	height: 700px;
+	height: 800px;
+	width: 60%;
+}
+
+div.menu {
+	margin: 10px 10px;
+	width: 200px;
+	float: left;
+}
+
+div.menu h4 {
+	display: block;
+	color: #000;
+	padding: 8px 16px;
+	background-color: #f2f2f2;
+}
+
+div.menu ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	width: 200px;
+	background-color: #f1f1f1;
+	float: left;
+}
+
+div.menu li a {
+	display: block;
+	color: #000;
+	padding: 8px 16px;
+	text-decoration: none;
+}
+
+div.menu li a:hover {
+	background-color: #555;
+	color: white;
+}
+
+div.menu li#title a {
+	background-color: #8c8c8c;
+}
+
+div.container p {
+	width: 80%;
+	margin: 30px 50px;
 }
