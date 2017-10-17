@@ -1,10 +1,10 @@
 var html = `
     <nav>
     <ul>
-        <li id="title"><a href="#">Navigation</a></li>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="cv-en.html">CV</a></li>
-        <li><a href="http://github.com/JRegimbal">GitHub</a></li>
+        <li><a href="index.html">Home/Accueil</a></li>
+        <li><a href="cv-en.html">CV (English)</a></li>
+        <li><a href="cv-fr.html">CV (Français)</a></li>
+        <li><a href="http://github.com/JRegimbal" target="_blank">GitHub</a></li>
     </ul>
     </nav>
 `;

@@ -58,11 +58,15 @@ div.menu li a:hover {
 	color: white;
 }
 
-div.menu li#title a {
+div.menu #title a {
 	background-color: #8c8c8c;
 }
 
 div.container p {
 	width: 80%;
 	margin: 30px 50px;
+}
+
+div.content {
+    margin: auto;
 }
