@@ -43,8 +43,14 @@ div.navigation li a {
 	color: black;
 	text-decoration: none;
 }
-#last-personal {
-    border-bottom: 2px solid black;
+
+ul #last-personal {
+    border-bottom:2px solid black;
+}
+
+div.navigation li #active {
+    background-color:cadetblue;
+    color: white;
 }
 
 div.navigation li a:hover {
