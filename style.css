@@ -1,72 +1,67 @@
-div.container {
-	overflow: auto;
-	width: 100%;
+body {
+    font-family: sans-serif;
+    background: aliceblue;
 }
 
 div.header {
-	margin: 0 auto;
-	padding: 1em;
-	width: 80%;
+    height: 80px;
 }
 
 div.header h1 {
-	text-align: center;
+    text-align: right;
+    width: auto;
+    color: white;
+    text-shadow: 
+        -1px -1px 0 #000, 
+        1px -1px 0 #000, 
+        -1px 1px 0 #000, 
+        1px 1px 0 #000;
 }
 
-div.header p {
-	text-align: center;
-}
-
-object {
-	display: block;
-	margin: 0 auto;
-	height: 700px;
-	width: 60%;
-}
-
-div.menu {
-	margin: 10px 10px;
-	width: 200px;
-	float: left;
-}
-
-div.menu h4 {
+div.navigation h4 {
 	display: block;
 	color: #000;
-	padding: 8px 16px;
 	background-color: #f2f2f2;
 }
 
-div.menu ul {
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-	width: 200px;
-	background-color: #f1f1f1;
-	float: left;
+div.navigation ul {
+    list-style-type: none;
+    padding: 0;
+    width: 20%;
+    position: fixed;
+    overflow: hidden;
+    outline: 2px solid black;
+    margin-top: 0;
 }
 
-div.menu li a {
+div.navigation li a {
 	display: block;
-	color: #000;
-	padding: 8px 16px;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+	background-color: white;
+	color: black;
 	text-decoration: none;
 }
+#last-personal {
+    border-bottom: 2px solid black;
+}
 
-div.menu li a:hover {
+div.navigation li a:hover {
 	background-color: #555;
 	color: white;
 }
 
-div.menu #title a {
+div.navigation #title a {
 	background-color: #8c8c8c;
 }
 
-div.container p {
-	width: 80%;
-	margin: 30px 50px;
-}
-
 div.content {
-    margin: auto;
+    margin-left: 25%;
+    float: right;
+    margin-right: 5%;
+    text-align: justify;
+    outline: 2px solid black;
+    padding: 10px;
+    background: white;
 }
