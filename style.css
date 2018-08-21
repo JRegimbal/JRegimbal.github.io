@@ -11,17 +11,17 @@ div.header h1 {
     text-align: right;
     width: auto;
     color: white;
-    text-shadow: 
-        -1px -1px 0 #000, 
-        1px -1px 0 #000, 
-        -1px 1px 0 #000, 
+    text-shadow:
+        -1px -1px 0 #000,
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
         1px 1px 0 #000;
 }
 
 div.navigation h4 {
-	display: block;
-	color: #000;
-	background-color: #f2f2f2;
+    display: block;
+    color: #000;
+    background-color: #f2f2f2;
 }
 
 div.navigation ul {
@@ -35,13 +35,13 @@ div.navigation ul {
 }
 
 div.navigation li a {
-	display: block;
+    display: block;
     text-align: center;
     padding-top: 5px;
     padding-bottom: 5px;
-	background-color: white;
-	color: black;
-	text-decoration: none;
+    background-color: white;
+    color: black;
+    text-decoration: none;
 }
 
 ul #last-personal {
@@ -54,12 +54,12 @@ div.navigation li #active {
 }
 
 div.navigation li a:hover {
-	background-color: #555;
-	color: white;
+    background-color: #555;
+    color: white;
 }
 
 div.navigation #title a {
-	background-color: #8c8c8c;
+    background-color: #8c8c8c;
 }
 
 div.content {
