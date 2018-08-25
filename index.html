@@ -3,6 +3,7 @@
     <meta charset="UTF-8">
     <title>Information</title>
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
   </head>
   <body>
     <!--
@@ -15,7 +16,7 @@
     <script type="text/javascript" src="navbar.js"></script>
     <nav class="navbar is-primary" role="navigation" aria-label="main navigation">
       <div class="navbar-brand">
-        <a class="navbar-item" href="index.html">Home/Accueil</a>
+        <a class="navbar-item"><strong>Information</strong></a>
         <a role="button" class="navbar-burger" aria-label="menu" id="burger" aria-expanded="false">
           <span aria-hidden="true"></span>
           <span aria-hidden="true"></span>
@@ -24,9 +25,20 @@
       </div>
       <div class="navbar-menu" id="menu">
         <div class="navbar-start">
-          <a class="navbar-item" href="about.html">About/À Propos</a>
-          <a class="navbar-item" href="CV-Juliette-Regimbal-en.pdf" target="_blank">CV (English)</a>
-          <a class="navbar-item" href="CV-Juliette-Regimbal-fr.pdf" target="_blank">CV (Français)</a>
+          <div class="navbar-item has-dropdown is-hoverable">
+            <a class="navbar-link">Pages</a>
+            <div class="navbar-dropdown">
+              <a class="navbar-item" href="index.html">Home/Accueil</a>
+              <a class="navbar-item" href="about.html">About/À Propos</a>
+            </div>
+          </div>
+          <div class="navbar-item has-dropdown is-hoverable">
+            <a class="navbar-link">CV</a>
+            <div class="navbar-dropdown">
+              <a class="navbar-item" href="CV-Juliette-Regimbal-en.pdf" target="_blank">English</a>
+              <a class="navbar-item" href="CV-Juliette-Regimbal-fr.pdf" target="_blank">Français</a>
+            </div>
+          </div>
         </div>
         <div class="navbar-end">
           <a class="navbar-item" href="https://github.com/JRegimbal" target="_blank">
