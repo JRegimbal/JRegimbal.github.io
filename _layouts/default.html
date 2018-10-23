@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html lang="{{ page.lang }}">
   <head>
     <meta charset="utf-8">
     <title>{{ page.title }}</title>
@@ -16,11 +16,23 @@
 
     <div class="navigation">
       <ul>
-        <li><a {% if page.title == 'Information' %}id="active"{% endif %} href="index.html">Home/Accueil</a></li>
-        <li><a {%if page.title == 'About/À Propos' %}id="active"{% endif %} href="about.html">About/À Propos</a></li>
-        <li><a href="CV-Juliette-Regimbal-en.pdf" target="_blank">CV (English)</a></li>
-        <li id=last-personal><a href="CV-Juliette-Regimbal-fr.pdf" target="_blank">CV (Français)</a></li>
-        <li style="display: flex;">
+        <li><a {% if page.title == 'Information' %}class="active"{% endif %} href="index.html">
+            {% if page.lang == "en" %}
+            Home
+            {% else %}
+            Accueil
+            {% endif %}
+          </a></li>
+          <li><a {% if page.title == 'About' or page.title == "À Propos"  %}class="active"{% endif %}
+              href="{% if page.lang == 'en' %}about.html{% else %}apropos.html{% endif %}">
+            {% if page.lang == "en" %}
+            About
+            {% else %}
+            À Propos
+            {% endif %}
+          </a></li>
+          <li class="last"><a href="/CV-Juliette-Regimbal-{{ page.lang }}.pdf" target="_blank">CV ({{ page.lang }})</a></li>
+        <li class="last" style="display: flex;">
           <a href="https://github.com/JRegimbal" target="_blank" style="flex-grow: 1;">
             <img src="{{ "/assets/github.png" | prepend: site.baseurl }}" alt="GitHub" height="32" width="32">
           </a>
@@ -30,6 +42,10 @@
           <a href="https://gitlab.com/JRegimbal" target="_blank" style="flex-grow:1;">
             <img src="{{ "/assets/gitlab.png" | prepend: site.baseurl }}" alt="GitLab" height="32" width="32">
           </a>
+        </li>
+        <li style="display: flex">
+          <a {% if page.lang == "en" %} class="active" {% else %} href="{{ page.alternate | prepend: site.baseurl }}" {% endif %} style="flex-grow: 1;">en</a>
+          <a {% if page.lang == "fr" %} class="active" {% else %} href="{{ page.alternate | prepend: site.baseurl }}" {% endif %} style="flex-grow: 1;">fr</a>
         </li>
       </ul>
     </div>

@@ -44,11 +44,11 @@ div.navigation li a {
     text-decoration: none;
 }
 
-ul #last-personal {
+ul .last {
     border-bottom:2px solid black;
 }
 
-div.navigation li #active {
+div.navigation li .active {
     background-color:cadetblue;
     color: white;
 }
