@@ -20,9 +20,17 @@
         <li><a {%if page.title == 'About/À Propos' %}id="active"{% endif %} href="about.html">About/À Propos</a></li>
         <li><a href="CV-Juliette-Regimbal-en.pdf" target="_blank">CV (English)</a></li>
         <li id=last-personal><a href="CV-Juliette-Regimbal-fr.pdf" target="_blank">CV (Français)</a></li>
-        <li><a href="https://github.com/JRegimbal" target="_blank">GitHub</a></li>
-        <li><a href="https://www.linkedin.com/in/juliette-regimbal/" target="_blank">LinkedIn</a></li>
-        <li><a href="https://gitlab.com/JRegimbal" target="_blank">GitLab</a></li>
+        <li style="display: flex;">
+          <a href="https://github.com/JRegimbal" target="_blank" style="flex-grow: 1;">
+            <img src="{{ "/assets/github.png" | prepend: site.baseurl }}" alt="GitHub" height="32" width="32">
+          </a>
+          <a href="https://www.linkedin.com/in/juliette-regimbal/" target="_blank" style="flex-grow: 1;">
+            <img src="{{ "/assets/linkedin.png" | prepend: site.baseurl }}" alt="LinkedIn" height="32">
+          </a>
+          <a href="https://gitlab.com/JRegimbal" target="_blank" style="flex-grow:1;">
+            <img src="{{ "/assets/gitlab.png" | prepend: site.baseurl }}" alt="GitLab" height="32" width="32">
+          </a>
+        </li>
       </ul>
     </div>
 
