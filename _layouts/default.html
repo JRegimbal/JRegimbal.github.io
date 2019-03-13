@@ -24,7 +24,7 @@
             {% endif %}
           </a></li>
           <li><a {% if page.title == 'About' or page.title == "À Propos"  %}class="active"{% endif %}
-              href="{% if page.lang == 'en' %}about.html{% else %}apropos.html{% endif %}">
+                                                                             href="/{{page.lang}}/{% if page.lang == 'en' %}about.html{% else %}apropos.html{% endif %}">
             {% if page.lang == "en" %}
             About
             {% else %}
