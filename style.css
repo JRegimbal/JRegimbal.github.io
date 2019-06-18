@@ -3,11 +3,12 @@ body {
     background: aliceblue;
 }
 
-div.header {
+header {
     height: 80px;
 }
 
-div.header h1 {
+header h1 {
+    margin-right: 5%;
     text-align: right;
     width: auto;
     color: white;
@@ -18,13 +19,13 @@ div.header h1 {
         1px 1px 0 #000;
 }
 
-div.navigation h4 {
+nav h4 {
     display: block;
     color: #000;
     background-color: #f2f2f2;
 }
 
-div.navigation ul {
+nav ul {
     list-style-type: none;
     padding: 0;
     width: 15%;
@@ -34,7 +35,7 @@ div.navigation ul {
     margin-top: 0;
 }
 
-div.navigation li a {
+nav li a {
     display: block;
     text-align: center;
     padding-top: 5px;
@@ -48,21 +49,25 @@ ul .last {
     border-bottom:2px solid black;
 }
 
-div.navigation li .active {
-    background-color:cadetblue;
-    color: white;
+nav li .active {
+    background-color:#bfd8d9;
+    color: black;
 }
 
-div.navigation li a:hover {
+nav li a:hover {
     background-color: #555;
     color: white;
 }
 
-div.navigation #title a {
+#external_links {
+    display: flex;
+}
+
+nav #title a {
     background-color: #8c8c8c;
 }
 
-div.content {
+main {
     margin-left: 25%;
     float: right;
     margin-right: 5%;
@@ -70,4 +75,15 @@ div.content {
     outline: 2px solid black;
     padding: 10px;
     background: white;
+}
+
+@media screen and (max-width: 850px) {
+    main {
+        margin: auto;
+    }
+    nav ul {
+        position: relative;
+        width: inherit;
+    }
+
 }
