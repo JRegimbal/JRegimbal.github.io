@@ -1,16 +1,22 @@
 body {
-    font-family: sans-serif;
+    font-family: Roboto, sans-serif;
     background: aliceblue;
+    display: grid;
+    grid-template-columns: repeat(5, 20%);
+    grid-auto-rows: minmax(100px, auto);
 }
 
 header {
     height: 80px;
+    text-align: right;
+    grid-column: 5;
+    grid-row: 1;
 }
 
 header h1 {
-    margin-right: 5%;
+    /*margin-right: 5%;
     text-align: right;
-    width: auto;
+    width: auto;*/
     color: white;
     text-shadow:
         -1px -1px 0 #000,
@@ -19,8 +25,13 @@ header h1 {
         1px 1px 0 #000;
 }
 
+nav {
+    grid-column: 1;
+    grid-row: 2;
+    width: auto;
+}
+
 nav h4 {
-    display: block;
     color: #000;
     background-color: #f2f2f2;
 }
@@ -28,7 +39,7 @@ nav h4 {
 nav ul {
     list-style-type: none;
     padding: 0;
-    width: 15%;
+    width: 20%;
     position: fixed;
     overflow: hidden;
     outline: 2px solid black;
@@ -68,22 +79,12 @@ nav #title a {
 }
 
 main {
-    margin-left: 25%;
+    grid-column: 2 / 6;
+    grid-row: 2;
+    margin-left: 1em;
     float: right;
-    margin-right: 5%;
     text-align: justify;
     outline: 2px solid black;
     padding: 10px;
     background: white;
-}
-
-@media screen and (max-width: 850px) {
-    main {
-        margin: auto;
-    }
-    nav ul {
-        position: relative;
-        width: inherit;
-    }
-
 }
