@@ -1,16 +1,11 @@
 body {
     font-family: Roboto, sans-serif;
     background: aliceblue;
-    display: grid;
-    grid-template-columns: repeat(5, 20%);
-    grid-auto-rows: minmax(100px, auto);
 }
 
 header {
     height: 80px;
     text-align: right;
-    grid-column: 5;
-    grid-row: 1;
 }
 
 header h1 {
@@ -26,8 +21,6 @@ header h1 {
 }
 
 nav {
-    grid-column: 1;
-    grid-row: 2;
     width: auto;
 }
 
@@ -39,8 +32,6 @@ nav h4 {
 nav ul {
     list-style-type: none;
     padding: 0;
-    width: 20%;
-    position: fixed;
     overflow: hidden;
     outline: 2px solid black;
     margin-top: 0;
@@ -79,12 +70,38 @@ nav #title a {
 }
 
 main {
-    grid-column: 2 / 6;
-    grid-row: 2;
-    margin-left: 1em;
-    float: right;
     text-align: justify;
     outline: 2px solid black;
     padding: 10px;
     background: white;
+}
+
+@media screen and (min-width: 850px) {
+    body {
+        display: grid;
+        grid-template-columns: repeat(5, 20%);
+        grid-auto-rows: minmax(100px, auto);
+    }
+
+    header {
+        grid-column: 5;
+        grid-row: 1;
+    }
+
+    nav {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    nav ul {
+        width: 20%;
+        position: fixed;
+    }
+
+    main {
+        grid-column: 2 / 6;
+        grid-row: 2;
+        margin-left: 1em;
+        float: right;
+    }
 }
