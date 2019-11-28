@@ -21,14 +21,6 @@
             Accueil
             {% endif %}
           </a></li>
-          <li><a {% if page.title == 'About' or page.title == "À Propos"  %}class="active"{% endif %}
-                                                                             href="/{{page.lang}}/{% if page.lang == 'en' %}about.html{% else %}apropos.html{% endif %}">
-            {% if page.lang == "en" %}
-            About
-            {% else %}
-            À Propos
-            {% endif %}
-          </a></li>
           <li class="last"><a href="/CV-Juliette-Regimbal-{{ page.lang }}.pdf" target="_blank">CV ({{ page.lang }})</a></li>
         <li id="external_links" class="last">
 
