@@ -4,20 +4,21 @@ body {
 }
 
 header {
-    height: 80px;
+    height: 6em;;
     text-align: right;
+    padding-bottom: 10px;
 }
 
-header h1 {
-    /*margin-right: 5%;
-    text-align: right;
-    width: auto;*/
-    color: white;
-    text-shadow:
-        -1px -1px 0 #000,
-        1px -1px 0 #000,
-        -1px 1px 0 #000,
-        1px 1px 0 #000;
+#header-container {
+    display: flex;
+}
+
+#header-content {
+    margin-left: auto;
+    outline: 2px solid black;
+    background: white;
+    padding-left: 1em;
+    padding-right: 1em;
 }
 
 nav {
@@ -70,7 +71,6 @@ nav #title a {
 }
 
 main {
-    text-align: justify;
     outline: 2px solid black;
     padding: 10px;
     background: white;
