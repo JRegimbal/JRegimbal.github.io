@@ -5,11 +5,7 @@ lang: fr
 alternate: /en/index.html
 ---
 
-Juliette Regimbal est étudiante en deuxième cycle au [Shared Reality Lab](https://srl.mcgill.ca) à l'Université McGill
-et elle est assistante occasionelle de recherche au [DDMAL](https://ddmal.music.mcgill.ca]
-Juliette Regimbal est assistante de recherche à [DDMAL](https://ddmal.music.mcgill.ca/)
-à l'École de musique Schulich.
-Elle aime la photographie, cuisiner, son chat, et cuire du pain.
+Juliette Regimbal est étudiante en troisième cycle au [Shared Reality Lab](https://srl.mcgill.ca) à l'Université McGill.
+Ses intérêts de recherche incluent l'haptique, les outils de conception audio et haptique, la conception architecturale, l'accessibilité, et les données ouvertes.
 
-Quand elle ne pense pas à l'haptique,
-vous pouvez la trouver sur [GitHub](https://github.com/JRegimbal) ou en salutant les les chats du quartier.
+Vous pouvez retrouver plus concernant ses projets sur [Github](https://github.com/JRegimbal).
