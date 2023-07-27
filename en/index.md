@@ -7,7 +7,7 @@ alternate: /fr/index.html
 
 Juliette Regimbal is a PhD student in electrical engineering at the [Shared Reality Lab](https://srl.mcgill.ca) at McGill University.
 Her primary research interest is creating tools to best support audio and haptic designers.
-She is also interested in language used to describe haptics, accessibility, software architecture, linked and open data, music technology, and audio-haptic experience design.
+They are also interested in language used to describe haptics, accessibility, software architecture, linked and open data, music technology, and audio-haptic experience design.
 Outside of the lab, Juliette enjoys cooking, photography, good coffee, and *Star Trek*.
 
 Her current projects are:
@@ -22,4 +22,4 @@ Past projects include:
 * [Neon](https://github.com/DDMAL/Neon)
 * [The Measuring Polyphony Editor](https://github.com/MeasuringPolyphony/mp_editor)
 
-You can find more on her projects on [GitHub](https://github.com/JRegimbal) and through [ORCID](https://orcid.org/0000-0003-4902-046X).
+You can find more on their projects on [GitHub](https://github.com/JRegimbal) and through [ORCID](https://orcid.org/0000-0003-4902-046X).
