@@ -3,6 +3,7 @@ layout: default
 title: Home
 top_title: Information
 lang: en
+nav_order: 1
 permalink: /
 ---
 

@@ -5,3 +5,17 @@ parallel_localization: true
 
 sass:
   sourcemap: never
+
+kramdown:
+  syntax_highlighter: coderay
+  syntax_highlighter_opts:
+    line_numbers: no
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      top_title: "Blog"

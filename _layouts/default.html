@@ -1,4 +1,5 @@
 <!doctype html>
+{% assign lang = site.active_lang %}
 <html lang="{{ page.lang }}">
   <head>
     <meta charset="utf-8">
@@ -24,21 +25,13 @@
 
     <nav>
       <ul>
-        {% for doc in site.pages %}
-        {% if doc.lang == page.lang %}
-        <li><a {% if page == doc %}class="active"{% elsif doc.lang == site.default_lang %} href="{{doc.url}}" {% else %} href="/{{lang}}{{doc.url}}" {% endif %}>
-                                                 {{doc.title}}
-            </a></li>
-        {% endif %}
+        {% assign navlist = site.pages | where: "lang", lang | sort: "nav_order" %}
+        {% for doc in navlist %}
+        <li><a {% if page == doc %}class="active"{% elsif doc.lang == site.default_lang %} href="{{doc.url}}" {% else %} href="/{{doc.lang}}{{doc.url}}" {% endif %}>
+            {{doc.title}}
+        </a></li>
         {% endfor %}
-        <!--<li><a {% if page.title == 'Information' %}class="active"{% endif %} href="index.html">
-            {% if page.lang == "en" %}
-            Home
-            {% else %}
-            Accueil
-            {% endif %}
-        </a></li>-->
-          <li class="last"><a href="/assets/CV-Juliette-Regimbal-{{ page.lang }}.pdf" target="_blank">CV ({{ page.lang }})</a></li>
+        <li class="last"><a href="/assets/CV-Juliette-Regimbal-{{ lang }}.pdf" target="_blank">CV ({{ lang }})</a></li>
         <li role="group" aria-label="External Profile Links" id="external_links" class="last">
 
           <a role="menuitem" aria-label="LinkedIn Profile" href="https://www.linkedin.com/in/juliette-regimbal/" target="_blank" style="flex-grow: 1;">
@@ -52,9 +45,9 @@
           </a>
         </li>
         <li style="display: flex">
-          {% for lang in site.languages %}
-          <a style="flex-grow: 1;" {% if page.lang == lang %} class="active" {% elsif lang == site.default_lang %}href=" {{page.url}}"{% else %}href="/{{lang}}{{page.url}}"{% endif %}>
-            {{ lang }}
+          {% for l in site.languages %}
+          <a style="flex-grow: 1;" {% if lang == l %} class="active" {% elsif l == site.default_lang %}href=" {{page.url}}"{% else %}href="/{{l}}{{page.url}}"{% endif %}>
+            {{ l }}
           </a>
           {% endfor %}
         </li>
