@@ -1,6 +1,5 @@
 <!doctype html>
-{% assign lang = site.active_lang %}
-<html lang="{{ page.lang }}">
+<html lang="{{ site.active_lang }}">
   <head>
     <meta charset="utf-8">
     <title>Juliette Regimbal - {{ page.title }}</title>
@@ -25,13 +24,13 @@
 
     <nav>
       <ul>
-        {% assign navlist = site.pages | where: "lang", lang | sort: "nav_order" %}
+        {% assign navlist = site.pages | where: "lang", site.active_lang | sort: "nav_order" %}
         {% for doc in navlist %}
         <li><a {% if page == doc %}class="active"{% elsif doc.lang == site.default_lang %} href="{{doc.url}}" {% else %} href="/{{doc.lang}}{{doc.url}}" {% endif %}>
             {{doc.title}}
         </a></li>
         {% endfor %}
-        <li class="last"><a href="/assets/CV-Juliette-Regimbal-{{ lang }}.pdf" target="_blank">CV ({{ lang }})</a></li>
+        <li class="last"><a href="/assets/CV-Juliette-Regimbal-{{ site.active_lang }}.pdf" target="_blank">CV ({{ site.active_lang }})</a></li>
         <li role="group" aria-label="External Profile Links" id="external_links" class="last">
 
           <a role="menuitem" aria-label="LinkedIn Profile" href="https://www.linkedin.com/in/juliette-regimbal/" target="_blank" style="flex-grow: 1;">
@@ -46,7 +45,7 @@
         </li>
         <li style="display: flex">
           {% for l in site.languages %}
-          <a style="flex-grow: 1;" {% if lang == l %} class="active" {% elsif l == site.default_lang %}href=" {{page.url}}"{% else %}href="/{{l}}{{page.url}}"{% endif %}>
+          <a style="flex-grow: 1;" {% if site.active_lang == l %} class="active" {% elsif l == site.default_lang %}href=" {{page.url}}"{% else %}href="/{{l}}{{page.url}}"{% endif %}>
             {{ l }}
           </a>
           {% endfor %}
