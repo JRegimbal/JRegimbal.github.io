@@ -3,29 +3,42 @@
   <head>
     <meta charset="utf-8">
     <title>Juliette Regimbal - {{ page.title }}</title>
-    <link rel="stylesheet" type="text/css" href="/style.css">
-    <link rel="shortcut icon" type="image/x-icon" href="{{ "/favicon.ico" | prepend: site.baseurl }}">
+    <link rel="stylesheet" type="text/css" href="/assets/style.css">
+    <link rel="shortcut icon" type="image/x-icon" href="/assets/favicon.ico"">
   </head>
 
   <body>
     <header>
       <div id="header-container">
           <div id="header-content">
-            <h1>{{ page.title | downcase }}</h1>
+            <h1>
+            {% if page.top_title %}
+                {{ page.top_title | downcase }}
+            {% else %}
+                {{ page.title | downcase }}
+            {% endif %}
+            </h1>
           </div>
       </div>
     </header>
 
     <nav>
       <ul>
-        <li><a {% if page.title == 'Information' %}class="active"{% endif %} href="index.html">
+        {% for doc in site.pages %}
+        {% if doc.lang == page.lang %}
+        <li><a {% if page == doc %}class="active"{% elsif doc.lang == site.default_lang %} href="{{doc.url}}" {% else %} href="/{{lang}}{{doc.url}}" {% endif %}>
+                                                 {{doc.title}}
+            </a></li>
+        {% endif %}
+        {% endfor %}
+        <!--<li><a {% if page.title == 'Information' %}class="active"{% endif %} href="index.html">
             {% if page.lang == "en" %}
             Home
             {% else %}
             Accueil
             {% endif %}
-          </a></li>
-          <li class="last"><a href="/CV-Juliette-Regimbal-{{ page.lang }}.pdf" target="_blank">CV ({{ page.lang }})</a></li>
+        </a></li>-->
+          <li class="last"><a href="/assets/CV-Juliette-Regimbal-{{ page.lang }}.pdf" target="_blank">CV ({{ page.lang }})</a></li>
         <li role="group" aria-label="External Profile Links" id="external_links" class="last">
 
           <a role="menuitem" aria-label="LinkedIn Profile" href="https://www.linkedin.com/in/juliette-regimbal/" target="_blank" style="flex-grow: 1;">
@@ -39,8 +52,11 @@
           </a>
         </li>
         <li style="display: flex">
-          <a {% if page.lang == "en" %} class="active" {% else %} href="{{ page.alternate | prepend: site.baseurl }}" {% endif %} style="flex-grow: 1;">en</a>
-          <a {% if page.lang == "fr" %} class="active" {% else %} href="{{ page.alternate | prepend: site.baseurl }}" {% endif %} style="flex-grow: 1;">fr</a>
+          {% for lang in site.languages %}
+          <a style="flex-grow: 1;" {% if page.lang == lang %} class="active" {% elsif lang == site.default_lang %}href=" {{page.url}}"{% else %}href="/{{lang}}{{page.url}}"{% endif %}>
+            {{ lang }}
+          </a>
+          {% endfor %}
         </li>
       </ul>
     </nav>

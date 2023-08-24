@@ -1,8 +1,9 @@
 ---
 layout: default
-title: Information
+title: Accueil
+top_title: Information
 lang: fr
-alternate: /en/index.html
+permalink: /
 ---
 
 Juliette Regimbal est doctorante en génie électrique au [Shared Reality Lab](https://srl.mcgill.ca) à l'Université McGill.

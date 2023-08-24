@@ -1,0 +1,7 @@
+languages: ["en", "fr"]
+default_lang: "en"
+exclude_from_localization: ["assets", "CNAME"]
+parallel_localization: true
+
+sass:
+  sourcemap: never
