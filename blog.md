@@ -6,7 +6,7 @@ layout: default
 permalink: blog/
 ---
 This is just a space for blog posts on topics I think are interesting and want to share.
-Currently, any writing here will be rough and irregular.
+Currently, any writing here will be rough and any updates will be irregular.
 If you have questions or comments on any posts, you may contact me using the email address in my CV.
 
 {% for post in site.posts %}
