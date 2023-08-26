@@ -76,7 +76,7 @@ main {
     background: white;
 }
 
-@media screen and (min-width: 850px) {
+@media screen and (min-width: 1024px) {
     body {
         display: grid;
         grid-template-columns: repeat(5, 1fr);
