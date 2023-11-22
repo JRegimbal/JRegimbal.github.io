@@ -1,10 +1,8 @@
 ---
-layout: default
-title: Home
-top_title: Information
-lang: en
-nav_order: 1
-permalink: /
+title: "About"
+menu: main
+date: 2023-11-13T10:29:50-05:00
+draft: false
 ---
 
 Juliette Regimbal is a PhD student in electrical engineering at the [Shared Reality Lab](https://srl.mcgill.ca) at McGill University.

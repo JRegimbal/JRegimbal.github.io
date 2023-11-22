@@ -1,0 +1,32 @@
+<div id="nav-pages">
+    {{ range .Site.Menus.main.ByWeight }}
+    <a href="{{ .URL }}">{{ .Name }}</a>
+    {{ end }}
+    {{ with resources.Get .Site.Params.cvName }}
+        <a href="{{ .Permalink }}">CV</a>
+    {{ end }}
+</div>
+
+<div class="horizontal-nav external-sites">
+    {{ range .Site.Params.externalSites }}
+    <a aria-label="{{ .name }}" class="external-site" href="{{ .href }}">
+        {{ $icon := resources.Get .icon }}
+        <img src="{{ $icon.Permalink }}" alt="{{ .name }} logo" class="external-site-img">
+    </a>
+    {{ end }}
+</div>
+
+<div class="horizontal-nav"> <!--style="display: flex"-->
+  {{ $translations := dict }}
+  {{ range .Translations }}
+    {{ $translations = merge $translations (dict .Language.Lang .) }}
+  {{ end }}
+
+  <a class="language-elem active">{{ .Page.Lang }}</a>
+  {{ range .Site.Languages }}
+    {{ with (index $translations .Lang) }}
+        <a class="language-elem" href="{{ .Permalink }}">{{ .Language.LanguageName }}</a>
+    {{ end}}
+  {{ end }}
+</div>
+

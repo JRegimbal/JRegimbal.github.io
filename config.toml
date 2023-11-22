@@ -1,0 +1,41 @@
+baseURL = 'https://www.julietteregimbal.ca/'
+theme = 'juliette'
+contentDir = 'content'
+defaultContentLanguage = 'en'
+title = "Juliette Regimbal"
+
+[languages]
+    [languages.en]
+        languageName = 'en'
+        LanguageCode = 'en-us'
+        title = "Juliette has a website"
+        [languages.en.params]
+            description = "A website about Juliette Regimbal"
+            cvName = "CV-Juliette-Regimbal-en.pdf"
+    [languages.fr]
+        languageName = 'fr'
+        LanguageCode = 'fr-ca'
+        title = "Juliette a un site web"
+        [languages.fr.params]
+            description = "Un site web pour Juliette Regimbal"
+            cvName = "CV-Juliette-Regimbal-fr.pdf"
+
+[params]
+    author = "Juliette Regimbal"
+    title = "Juliette Regimbal"
+    favicon = "favicon.ico"
+
+[[params.externalSites]]
+    name = "LinkedIn"
+    href = "https://www.linkedin.com/in/juliette-regimbal/"
+    icon = "linkedin.png"
+
+[[params.externalSites]]
+    name = "GitHub"
+    href = "https://github.com/JRegimbal"
+    icon = "github.png"
+
+[[params.externalSites]]
+    name = "ORCID"
+    href = "https://orcid.org/0000-0003-4902-046X"
+    icon = "ORCIDiD_iconvector.svg"

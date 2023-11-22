@@ -1,17 +1,19 @@
+# Created by https://www.toptal.com/developers/gitignore/api/hugo
+# Edit at https://www.toptal.com/developers/gitignore?templates=hugo
 
-# Created by https://www.gitignore.io/api/jekyll
+### Hugo ###
+# Generated files by hugo
+/public/
+/resources/_gen/
+/assets/jsconfig.json
+hugo_stats.json
 
-### Jekyll ###
-_site/
-.sass-cache/
-.jekyll-cache/
-.jekyll-metadata
+# Executable may be added to repository
+hugo.exe
+hugo.darwin
+hugo.linux
 
+# Temporary lock file while building
+/.hugo_build.lock
 
-# End of https://www.gitignore.io/api/jekyll
-
-## GitHub Pages
-Gemfile
-Gemfile.lock
-.bundle
-vendor
+# End of https://www.toptal.com/developers/gitignore/api/hugo

@@ -2,7 +2,9 @@
 title: "Thrash Unreal: Reducing 2DIY Instability while Rendering Textures"
 author: Juliette Regimbal
 date: 2023-08-23
-lang: en
+tags:
+    - "haptics"
+    - "howto"
 ---
 
 ## What's this about? A quick introduction
