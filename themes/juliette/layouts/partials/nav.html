@@ -16,7 +16,7 @@
     {{ end }}
 </div>
 
-<div class="horizontal-nav"> <!--style="display: flex"-->
+<div class="horizontal-nav">
   {{ $translations := dict }}
   {{ range .Translations }}
     {{ $translations = merge $translations (dict .Language.Lang .) }}
