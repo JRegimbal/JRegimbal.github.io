@@ -14,7 +14,7 @@ Ses projets actuels sont:
 
 * [The Haptic Authoring Tool Box (HAT Box)](https://srl.mcgill.ca/hat-box) (aussi [sur GitHub](https://github.com/JRegimbal/hat-box))
 * [Internet Multimodal Access to Graphical Exploration (IMAGE)](https://image.a11y.mcgill.ca) (aussi [sur GitHub](https://github.com/Shared-Reality-Lab/IMAGE-server), [lire l'article](https://doi.org/10.1145/3665223))
-* [Un outil de conception haptique présentement sans nom](https://github.com/JRegimbal/haptic-swatch)
+* [Un outil de conception haptique présentement sans nom](https://github.com/JRegimbal/haptic-swatch) ([prépublication](/EHC_24_preprint.pdf))
 
 Ses projets passés incluent:
 

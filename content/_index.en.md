@@ -14,7 +14,7 @@ Her current projects are:
 
 * [The Haptic Authoring Tool Box (HAT Box)](https://srl.mcgill.ca/hat-box) (also [on GitHub](https://github.com/JRegimbal/hat-box))
 * [Internet Multimodal Access to Graphical Exploration (IMAGE)](https://image.a11y.mcgill.ca) (also [on GitHub](https://github.com/Shared-Reality-Lab/IMAGE-server), [read the paper](https://doi.org/10.1145/3665223))
-* [A presently unnamed haptic design tool](https://github.com/JRegimbal/haptic-swatch)
+* [A presently unnamed haptic design tool](https://github.com/JRegimbal/haptic-swatch) ([preprint](/EHC_24_preprint.pdf))
 
 Past projects include:
 
