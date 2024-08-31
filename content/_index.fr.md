@@ -7,8 +7,8 @@ draft: false
 
 Juliette Regimbal est doctorante en génie électrique au [Shared Reality Lab](https://srl.mcgill.ca) à l'Université McGill.
 Son principal intérêt de recherche est de créer des outils pour soutenir les concepteur·euses audio-haptiques.
-Elle s'intéresse aussi à la langage utilisée pour discuter les sensations haptiques, l'accessibilité, l'architecture logicielle, les données liées et ouvertes, la technologie de la musique et la conception des expériences audio-haptiques.
-Hors du lab, Juliette aime la cuisine, la photographie, du bon café, et *Star Trek*.
+Elle s'intéresse aussi à la langage utilisée pour discuter les sensations haptiques, le soutien à la créativité, l'accessibilité, l'architecture logicielle, les données liées et ouvertes, la technologie de la musique et la conception des expériences audio-haptiques.
+Hors du lab, Juliette aime la cuisine, la photographie, la radio logicielle, du bon café, et *Star Trek*.
 
 Ses projets actuels sont:
 

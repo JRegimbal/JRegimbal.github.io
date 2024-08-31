@@ -7,8 +7,8 @@ draft: false
 
 Juliette Regimbal is a PhD student in electrical engineering at the [Shared Reality Lab](https://srl.mcgill.ca) at McGill University.
 Her primary research interest is creating tools to best support audio and haptic designers.
-They are also interested in language used to describe haptics, accessibility, software architecture, linked and open data, music technology, and audio-haptic experience design.
-Outside of the lab, Juliette enjoys cooking, photography, good coffee, and *Star Trek*.
+They are also interested in language used to describe haptics, creativity support, accessibility, software architecture, linked and open data, music technology, and audio-haptic experience design.
+Outside of the lab, Juliette enjoys cooking, photography, software-defined radio, good coffee, and *Star Trek*.
 
 Her current projects are:
 
