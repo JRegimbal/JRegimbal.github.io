@@ -37,6 +37,8 @@
 :root {
     --animation-duration: 60s;
     --animation-count: infinite;
+    --not-black: #333;
+    --not-white: #fcfcfc;
 }
 
 body {
@@ -54,10 +56,10 @@ body {
 }
 
 .title a {
-    outline: 2px solid black;
-    background: white;
+    outline: 2px solid var(--not-black);
+    background: var(--not-white);
     padding: 1em;
-    color: black;
+    color: var(--not-black);
     text-decoration: none;
 }
 
@@ -68,7 +70,7 @@ body {
 nav {
     margin-top: 1em;
     margin-bottom: 1em;
-    outline: 2px solid black;
+    outline: 2px solid var(--not-black);
 }
 
 .horizontal-nav {
@@ -84,10 +86,10 @@ nav a {
     text-align: center;
     padding-top: 0.5em;
     padding-bottom: 0.5em;
-    background-color: white;
-    color: black;
+    background-color: var(--not-white);
+    color: var(--not-black);
     text-decoration: none;
-    outline: 1px solid black;
+    outline: 1px solid var(--not-black);
 }
 
 nav .active {
@@ -95,16 +97,16 @@ nav .active {
     animation-name: activePalette;
     animation-duration: var(--animation-duration);
     animation-iteration-count: var(--animation-count);
-    color: black;
+    color: var(--not-black);
 }
 
 nav a:hover {
     background-color: #555;
-    color: white;
+    color: var(--not-white);
 }
 
 .external-sites {
-    outline: 1px solid black;
+    outline: 1px solid var(--not-black);
 }
 
 .external-site {
@@ -117,8 +119,8 @@ nav a:hover {
 }
 
 main {
-    outline: 2px solid black;
-    background: white;
+    outline: 2px solid var(--not-black);
+    background: var(--not-white);
     padding: 0.5em;
 }
 
