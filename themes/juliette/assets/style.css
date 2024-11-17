@@ -1,6 +1,50 @@
+@keyframes backgroundPalette {
+    0% {
+        background: #f0f8ff;
+    }
+    25% {
+        background: #fff0ff;
+    }
+    50% {
+        background: #fff7f0;
+    }
+    75% {
+        background: #f0fff0;
+    }
+    100% {
+        background: #f0f8ff;
+    }
+}
+
+@keyframes activePalette {
+    0% {
+        background: #b6cecf;
+    }
+    25% {
+        background: #c3b6cf;
+    }
+    50% {
+        background: #cfb7b6;
+    }
+    75% {
+        background: #c2cfb6;
+    }
+    100% {
+        background: #b6cecf;
+    }
+}
+
+:root {
+    --animation-duration: 30s;
+    --animation-count: infinite;
+}
+
 body {
     font-family: sans-serif;
-    background: aliceblue;
+    /*background: aliceblue;*/
+    animation-name: backgroundPalette;
+    animation-duration: var(--animation-duration);
+    animation-iteration-count: var(--animation-count);
 }
 
 .title {
@@ -42,7 +86,10 @@ nav a {
 }
 
 nav .active {
-    background-color:#bfd8d9;
+    /*background-color:#bfd8d9;*/
+    animation-name: activePalette;
+    animation-duration: var(--animation-duration);
+    animation-iteration-count: var(--animation-count);
     color: black;
 }
 
