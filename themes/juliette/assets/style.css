@@ -44,9 +44,7 @@
 body {
     font-family: sans-serif;
     /*background: aliceblue;*/
-    @media (prefers-color-scheme: light) {
-        animation-name: backgroundPalette;
-    }
+    animation-name: backgroundPalette;
     @media (prefers-color-scheme: dark) {
         animation-name: activePalette;
     }
@@ -104,9 +102,7 @@ nav a:not(.active):hover {
 
 nav .active {
     /*background-color:#bfd8d9;*/
-    @media (prefers-color-scheme: light) {
-        animation-name: activePalette;
-    }
+    animation-name: activePalette;
     @media (prefers-color-scheme: dark) {
         animation-name: backgroundPalette;
     }
