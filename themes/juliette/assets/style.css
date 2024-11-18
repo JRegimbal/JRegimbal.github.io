@@ -1,4 +1,4 @@
-@keyframes backgroundPalette {
+@keyframes background-palette {
     0% {
         background: #f0f8ff;
     }
@@ -16,7 +16,7 @@
     }
 }
 
-@keyframes activePalette {
+@keyframes active-palette {
     0% {
         background: #b6cecf;
     }
@@ -44,9 +44,9 @@
 body {
     font-family: sans-serif;
     /*background: aliceblue;*/
-    animation-name: backgroundPalette;
+    animation-name: background-palette;
     @media (prefers-color-scheme: dark) {
-        animation-name: activePalette;
+        animation-name: active-palette;
     }
     animation-duration: var(--animation-duration);
     animation-iteration-count: var(--animation-count);
@@ -102,11 +102,10 @@ nav a:not(.active):hover {
 
 nav .active {
     /*background-color:#bfd8d9;*/
-    animation-name: activePalette;
+    animation-name: active-palette;
     @media (prefers-color-scheme: dark) {
-        animation-name: backgroundPalette;
+        animation-name: background-palette;
     }
-    animation-name: activePalette;
     animation-duration: var(--animation-duration);
     animation-iteration-count: var(--animation-count);
     color: var(--not-black);
