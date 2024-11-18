@@ -44,7 +44,12 @@
 body {
     font-family: sans-serif;
     /*background: aliceblue;*/
-    animation-name: backgroundPalette;
+    @media (prefers-color-scheme: light) {
+        animation-name: backgroundPalette;
+    }
+    @media (prefers-color-scheme: dark) {
+        animation-name: activePalette;
+    }
     animation-duration: var(--animation-duration);
     animation-iteration-count: var(--animation-count);
 }
@@ -92,17 +97,23 @@ nav a {
     outline: 1px solid var(--not-black);
 }
 
+nav a:not(.active):hover {
+    background-color: #555;
+    color: var(--not-white);
+}
+
 nav .active {
     /*background-color:#bfd8d9;*/
+    @media (prefers-color-scheme: light) {
+        animation-name: activePalette;
+    }
+    @media (prefers-color-scheme: dark) {
+        animation-name: backgroundPalette;
+    }
     animation-name: activePalette;
     animation-duration: var(--animation-duration);
     animation-iteration-count: var(--animation-count);
     color: var(--not-black);
-}
-
-nav a:hover {
-    background-color: #555;
-    color: var(--not-white);
 }
 
 .external-sites {
@@ -122,6 +133,7 @@ main {
     outline: 2px solid var(--not-black);
     background: var(--not-white);
     padding: 0.5em;
+    color: var(--not-black);
 }
 
 footer {
