@@ -3,8 +3,8 @@
     {{- partial "head.html" . -}}
     <body>
         {{- partial "header.html" . -}}
-        <nav>{{- partial "nav.html" . -}}</nav>
-        <main id="content">
+        <nav class="fake-3d">{{- partial "nav.html" . -}}</nav>
+        <main id="content" class="fake-3d">
         {{- block "main" . }}{{- end }}
         </main>
         {{- partial "footer.html" . -}}
