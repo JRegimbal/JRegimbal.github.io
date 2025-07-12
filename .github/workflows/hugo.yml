@@ -60,4 +60,4 @@ jobs:
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           known_hosts: ${{ secrets.KNOWN_HOSTS }}
       - name: Deploy
-        run: ADDRESS=$(ssh ${{ secrets.PROXY_USER }}@${{ secrets.PROXY_HOST }} "getent hosts ${{ secrets.HOST }} | cut -d ' ' -f 1") rsync -az --del -e 'ssh -J ${{ secrets.PROXY_USER }}@${{ secrets.PROXY_HOST }}' ./public ${{ secrets.REMOTE_USER }}@$ADDRESS:/var/www/jr
+        run: rsync -az --del -e 'ssh -J ${{ secrets.PROXY_USER }}@${{ secrets.PROXY_HOST }}' ./public ${{ secrets.REMOTE_USER }}@$(ssh ${{ secrets.PROXY_USER }}@${{ secrets.PROXY_HOST }} "getent hosts ${{ secrets.HOST }} | cut -d ' ' -f 1"):/var/www/jr
