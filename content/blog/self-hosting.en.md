@@ -9,7 +9,7 @@ tags:
 
 I've hosted a personal Nextcloud server using a VPS for years. I always knew I could *probably* do it myself, but the only spare computer I had to run constantly was an old Raspberry Pi B. The upfront cost of replacing that put the thought of self-hosting it out of my mind up until a couple weeks ago, when I became sick and tired of regular spring cleaning to stay under the storage limit of my VPS. It had also been a good year or so since I took on a real IT project of my own, so curiosity got the best of me. I asked myself:
 
-## Is switching worth the cost?
+### Is switching worth the cost?
 
 Or, rather, when would switching to a machine of my own be worth the cost of purchasing and operating it. With my internet bill a fixed expense and the maximum residential rate for electricity in Quebec set at 10.652 ¢/kWh, a new machine would need to consume a constant 130 W to match the monthly cost of my current, insufficient VPS. A better question is how long would it take for the cost of the machine to be recouped, and how much can I expect to save in its usable life?
 
@@ -26,7 +26,7 @@ From there, I narrowed the scope down to two machines: a used Thinkcentre m910q 
 
 It might be unlikely, but replacing any components on the n150 system would quickly make it a more expensive option than the m910q. Seeing a good number of people use the m910q in their own home server/lab setups for years at a time, I was comfortable taking it as the safe option.
 
-## Setting up the server
+### Setting up the server
 
 This is largely an aside, but prior to buying the m910q I wanted to get a feel for what my network would look like. I dusted off my old Raspberry Pi, installed debian, and moved this website over to it.
 
@@ -40,9 +40,9 @@ Once the m910q arrived, things went fairly smoothly. I installed Proxmox on the 
 
 Having Nextcloud run on a much better system has been great. The server responds much more quickly to requests and I'm no longer terrified that if I upload a video of the cat I'll run out of space. It has only been a few days, but the experience thus far is positive.
 
-## Checking my work
+### Checking my work
 
-I made some pretty huge assumptions about power consumption earlier on, and the thought was nagging me: how close is the 35 W in reality? I have a little plug-in power meter, so as I was thinking about this blog post I measured the energy used by the server over an hour. The total energy used was 0.004 kWh, or 4 W on average.
+I made some pretty huge assumptions about power consumption earlier on, and the thought was nagging me: how close is the 35 W to reality? I have a little plug-in power meter, so as I was writing this blog post I measured the energy used by the server over an hour. The total energy used was 0.005 kWh, or 5 W on average.
 
 I clearly was pessimistic on the estimate, and the effect of power consumption on cost is practically nil for my current purposes. Granted, I knew that going in, and wanted to err on the side of caution, but I still expected something greater. I'm realizing my intuition for idle/high-load power consumption is way off, and will probably do some projects measuring energy use in the future to develop this a bit further.
 
