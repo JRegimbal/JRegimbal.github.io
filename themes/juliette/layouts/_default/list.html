@@ -1,8 +1,6 @@
 {{ define "main" }}
 <content>
-  {{ if .Title }}
-  <h2>{{ .Title }}</h2>
-  {{ end }}
+  {{ .Content }}
   {{ if .Data.Singular }}
     <h3 class="blog-filter">{{ i18n "filtering-for" }} "{{ .Title }}"</h3>
   {{ end }}

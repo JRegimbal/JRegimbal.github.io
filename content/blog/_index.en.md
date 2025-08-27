@@ -1,5 +1,8 @@
 ---
 title: Juliette also has a blog
-menu: main
+menus:
+    main:
+        name: Blog
 date: 2023-11-14
 ---
+## {{% param title %}}
