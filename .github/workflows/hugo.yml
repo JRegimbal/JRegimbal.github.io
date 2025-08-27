@@ -54,4 +54,4 @@ jobs:
           hugo \
             --minify
       - name: Deploy
-        run: curl --fail https://julietteregimbal.ca/update/
+        run: curl --fail --user ${{ secrets.WEBHOOK_USER }}:${{ secrets.WEBHOOK_PASS }} https://julietteregimbal.ca/update/
