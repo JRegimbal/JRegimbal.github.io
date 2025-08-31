@@ -6,3 +6,5 @@ menus:
 date: 2023-11-14
 ---
 ## {{% param title %}}
+
+[RSS feed](./index.xml)
