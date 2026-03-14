@@ -11,7 +11,7 @@ Les intérêts de recherche de Juliette incluent les interfaces audio et haptiqu
 Hors de son travail, Juliette aime la cuisine, l'enseignement, la photographie, la radio logicielle, du bon café et *Star Trek*.
 
 Ses projets incluent:
-* [The Haptic Authoring Tool Box (HAT Box)](https://srl.mcgill.ca/hat-box) (aussi [sur GitHub](https://github.com/JRegimbal/hat-box))
+* [The Haptic Authoring Tool Box (HAT Box)](https://srl.mcgill.ca/hat-box) (aussi [sur GitHub](https://github.com/JRegimbal/hat-box), [CHI'26](/CHI26-HAT-Box.pdf))
 * [Internet Multimodal Access to Graphical Exploration (IMAGE)](https://image.a11y.mcgill.ca) (aussi [sur GitHub](https://github.com/Shared-Reality-Lab/IMAGE-server), [Web4All'22](https://doi.org/10.1145/3493612.3520460), [ACM TACCESS](https://doi.org/10.1145/3665223))
 * [Un outil de conception haptique présentement sans nom](https://github.com/JRegimbal/haptic-swatch) ([EuroHaptics'24](https://rdcu.be/dZbCt))
 * [Becoming](https://sonicarts.ucsd.edu/research/becoming.html) ([SIGGRAPH'22](https://doi.org/10.1145/3532834.3536209))
