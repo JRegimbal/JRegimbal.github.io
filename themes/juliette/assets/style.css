@@ -1,45 +1,76 @@
+:root {
+    --animation-duration: 60s;
+    --quick-animation-duration: 6s;
+    --animation-count: infinite;
+    --not-black: #333;
+    --not-white: #fcfcfc;
+    --outline: 2px solid var(--not-black);
+    --light-blue: #f0f8ff;
+    --dark-blue: #b6cecf;
+    --text-blue: #1d5f63;
+    --light-pink: #fff0ff;
+    --dark-pink: #c3b6cf;
+    --text-pink: #431e66;
+    --light-orange: #fff7f0;
+    --dark-orange: #cfb7b6;
+    --text-orange: #66211e;
+    --light-green: #f0fff0;
+    --dark-green: #c2cfb6;
+    --text-green: #335219;
+}
+
 @keyframes background-palette {
     0% {
-        background: #f0f8ff;
+        background: var(--light-blue);
     }
     25% {
-        background: #fff0ff;
+        background: var(--light-pink);
     }
     50% {
-        background: #fff7f0;
+        background: var(--light-orange);
     }
     75% {
-        background: #f0fff0;
+        background: var(--light-green);
     }
     100% {
-        background: #f0f8ff;
+        background: var(--light-blue);
     }
 }
 
 @keyframes active-palette {
     0% {
-        background: #b6cecf;
+        background: var(--dark-blue);
     }
     25% {
-        background: #c3b6cf;
+        background: var(--dark-pink);
     }
     50% {
-        background: #cfb7b6;
+        background: var(--dark-orange);
     }
     75% {
-        background: #c2cfb6;
+        background: var(--dark-green);
     }
     100% {
-        background: #b6cecf;
+        background: var(--dark-blue);
     }
 }
 
-:root {
-    --animation-duration: 60s;
-    --animation-count: infinite;
-    --not-black: #333;
-    --not-white: #fcfcfc;
-    --outline: 2px solid var(--not-black);
+@keyframes highlight {
+    0% {
+        color: var(--text-blue);
+    }
+    25% {
+        color: var(--text-pink);
+    }
+    50% {
+        color: var(--text-orange);
+    }
+    75% {
+        color: var(--text-green);
+    }
+    100% {
+        color: var(--text-blue);
+    }
 }
 
 body {
@@ -132,11 +163,19 @@ nav .active {
 }
 
 main {
+    line-height: 1.75;
     outline: var(--outline);
     background: var(--not-white);
     padding: 0.5em;
     color: var(--not-black);
 }
+
+main a {
+    animation-name: highlight;
+    animation-duration: var(--quick-animation-duration);
+    animation-iteration-count: var(--animation-count);
+}
+
 
 footer {
     margin: auto;
